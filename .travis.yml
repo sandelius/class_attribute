@@ -2,7 +2,7 @@ language: ruby
 script: 'bundle exec rake test:coverage --trace'
 rvm:
   - 2.2.0
-  - 2.2.2
+  - 2.2.3
   - rbx-2
   - jruby-9000
 
