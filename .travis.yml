@@ -1,0 +1,12 @@
+language: ruby
+script: 'bundle exec rake test:coverage --trace'
+rvm:
+  - 2.2.0
+  - 2.2.2
+  - rbx-2
+  - jruby-9000
+
+matrix:
+  allow_failures:
+    - rvm: rbx-2
+    - rvm: jruby-9000
