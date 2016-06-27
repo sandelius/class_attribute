@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'set'
 
 require_relative 'class_attribute/version'
@@ -56,7 +58,7 @@ module ClassAttribute
     # @return [void]
     def class_attribute(*attrs)
       singleton_class.class_eval do
-        attr_accessor *attrs
+        attr_accessor(*attrs)
       end
 
       class_attributes.merge(attrs)
